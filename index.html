@@ -105,38 +105,38 @@
 
   <script type="text/template" id="property-profile-template">
   <hr>
-  <h3>Property Profile - Location {0}</h3>
+  <h3>Property Profile - Location ##LOCATIONNUMBER##</h3>
 <div class="row">
   <!-- - Currently Insured Building Value  -->
   <div class="col-sm-6 form-group">
-    <label for="insured-building-value-loc-{0}">Currently Insured Building Value</label>
-    <input type="number" id="insured-building-value-loc-{0}" min="0" name="insured-building-value-loc-{0}" class="form-control">
+    <label for="insured-building-value-loc-##LOCATIONNUMBER##">Currently Insured Building Value</label>
+    <input type="number" id="insured-building-value-loc-##LOCATIONNUMBER##" min="0" name="insured-building-value-loc-##LOCATIONNUMBER##" class="form-control">
   </div>
   <!-- - Year Built -->
   <div class="col-sm-6 form-group">
-    <label for="year-built-loc-{0}">Year Built</label>
-    <select name="year-built-loc-{0}" id="year-built-loc-{0}" class="year-select form-control"></select>
+    <label for="year-built-loc-##LOCATIONNUMBER##">Year Built</label>
+    <select name="year-built-loc-##LOCATIONNUMBER##" id="year-built-loc-##LOCATIONNUMBER##" class="year-select form-control"></select>
   </div>
   <!-- - Square footage -->
   <div class="col-sm-6 form-group">
-    <label for="square-footage-loc-{0}">Square Footage</label>
-    <input type="number" name="square-footage-loc-{0}" id="square-footage-loc-{0}" min="0" class="form-control">
+    <label for="square-footage-loc-##LOCATIONNUMBER##">Square Footage</label>
+    <input type="number" name="square-footage-loc-##LOCATIONNUMBER##" id="square-footage-loc-##LOCATIONNUMBER##" min="0" class="form-control">
   </div>
   <!-- - How many units -->
   <div class="col-sm-6 form-group">
-    <label for="number-units-loc-{0}">How Many Units</label>
-    <input type="number" name="number-units-loc-{0}" id="number-units-loc-{0}" min="0" class="form-control">
+    <label for="number-units-loc-##LOCATIONNUMBER##">How Many Units</label>
+    <input type="number" name="number-units-loc-##LOCATIONNUMBER##" id="number-units-loc-##LOCATIONNUMBER##" min="0" class="form-control">
   </div>
   <!-- - How many stories -->
   <div class="col-sm-6 form-group">
-    <label for="number-stories-loc-{0}">How Many Stories</label>
-    <input type="number" name="number-stories-loc-{0}" id="number-stories-loc-{0}" min="0" class="form-control">
+    <label for="number-stories-loc-##LOCATIONNUMBER##">How Many Stories</label>
+    <input type="number" name="number-stories-loc-##LOCATIONNUMBER##" id="number-stories-loc-##LOCATIONNUMBER##" min="0" class="form-control">
   </div>
 
   <!-- - Classification (Hotel, motel, resort) -->
   <div class="col-sm-6 form-group">
-    <label for="classification-loc-{0}">Classification</label>
-    <select name="classification-loc-{0}" id="classification-loc-{0}" class="form-control">
+    <label for="classification-loc-##LOCATIONNUMBER##">Classification</label>
+    <select name="classification-loc-##LOCATIONNUMBER##" id="classification-loc-##LOCATIONNUMBER##" class="form-control">
       <option value="hotel">Hotel</option>
       <option value="motel">Motel</option>
       <option value="resort">Resort</option>
@@ -151,12 +151,12 @@
   </div>
   <div class="col-4">
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="pool-loc-{0}" id="pool-yes-loc-{0}" class="custom-control-input" value="yes">
-      <label for="pool-yes-loc-{0}" class="custom-control-label">Yes</label>
+      <input type="radio" name="pool-loc-##LOCATIONNUMBER##" id="pool-yes-loc-##LOCATIONNUMBER##" class="custom-control-input" value="yes">
+      <label for="pool-yes-loc-##LOCATIONNUMBER##" class="custom-control-label">Yes</label>
     </div>
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="pool-loc-{0}" id="pool-no-loc-{0}" class="custom-control-input" value="no">
-      <label for="pool-no-loc-{0}" class="custom-control-label">No</label>
+      <input type="radio" name="pool-loc-##LOCATIONNUMBER##" id="pool-no-loc-##LOCATIONNUMBER##" class="custom-control-input" value="no">
+      <label for="pool-no-loc-##LOCATIONNUMBER##" class="custom-control-label">No</label>
     </div>
   </div>
 </div>
@@ -168,13 +168,13 @@
     </div>
     <div class="col-4">
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" name="first-floor-outside-access-loc-{0}" value="yes" id="first-floor-outside-access-loc-yes-{0}" class="custom-control-input">
-        <label for="first-floor-outside-access-loc-yes-{0}" class="custom-control-label">Yes</label>
+        <input type="radio" name="first-floor-outside-access-loc-##LOCATIONNUMBER##" value="yes" id="first-floor-outside-access-loc-yes-##LOCATIONNUMBER##" class="custom-control-input">
+        <label for="first-floor-outside-access-loc-yes-##LOCATIONNUMBER##" class="custom-control-label">Yes</label>
       </div>
 
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" name="first-floor-outside-access-loc-{0}" value="no" id="first-floor-outside-access-loc-no-{0}" class="custom-control-input">
-        <label for="first-floor-outside-access-loc-no-{0}" class="custom-control-label">No</label>
+        <input type="radio" name="first-floor-outside-access-loc-##LOCATIONNUMBER##" value="no" id="first-floor-outside-access-loc-no-##LOCATIONNUMBER##" class="custom-control-input">
+        <label for="first-floor-outside-access-loc-no-##LOCATIONNUMBER##" class="custom-control-label">No</label>
       </div>
     </div>
   </div>
@@ -186,12 +186,12 @@
   </div>
   <div class="col-4">
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="shuttle-service-loc-{0}" id="shuttle-service-yes-loc-{0}" class="custom-control-input" value="yes">
-      <label for="shuttle-service-yes-loc-{0}" class="custom-control-label">Yes</label>
+      <input type="radio" name="shuttle-service-loc-##LOCATIONNUMBER##" id="shuttle-service-yes-loc-##LOCATIONNUMBER##" class="custom-control-input" value="yes">
+      <label for="shuttle-service-yes-loc-##LOCATIONNUMBER##" class="custom-control-label">Yes</label>
     </div>
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="shuttle-service-loc-{0}" id="shuttle-service-no-loc-{0}" class="custom-control-input" value="no">
-      <label for="shuttle-service-no-loc-{0}" class="custom-control-label">No</label>
+      <input type="radio" name="shuttle-service-loc-##LOCATIONNUMBER##" id="shuttle-service-no-loc-##LOCATIONNUMBER##" class="custom-control-input" value="no">
+      <label for="shuttle-service-no-loc-##LOCATIONNUMBER##" class="custom-control-label">No</label>
     </div>
   </div>
 </div>
@@ -203,12 +203,12 @@
   </div>
   <div class="col-4">
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="restaurant-loc-{0}" id="restaurant-yes-loc-{0}" class="custom-control-input" value="yes">
-      <label for="restaurant-yes-loc-{0}" class="custom-control-label">Yes</label>
+      <input type="radio" name="restaurant-loc-##LOCATIONNUMBER##" id="restaurant-yes-loc-##LOCATIONNUMBER##" class="custom-control-input" value="yes">
+      <label for="restaurant-yes-loc-##LOCATIONNUMBER##" class="custom-control-label">Yes</label>
     </div>
     <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" name="restaurant-loc-{0}" id="restaurant-no-loc-{0}" class="custom-control-input" value="no">
-      <label for="restaurant-no-loc-{0}" class="custom-control-label">No</label>
+      <input type="radio" name="restaurant-loc-##LOCATIONNUMBER##" id="restaurant-no-loc-##LOCATIONNUMBER##" class="custom-control-input" value="no">
+      <label for="restaurant-no-loc-##LOCATIONNUMBER##" class="custom-control-label">No</label>
     </div>
   </div>
 </div>
@@ -216,8 +216,8 @@
 <!-- - Please describe any amenities available -->
 <div class="row">
   <div class="col form-group">
-    <label for="amenities-description-loc-{0}">Please describe any amenities available</label>
-    <textarea name="amenities-description-loc-{0}" id="amenities-description-loc-{0}" cols="30" rows="10" class="form-control"></textarea>
+    <label for="amenities-description-loc-##LOCATIONNUMBER##">Please describe any amenities available</label>
+    <textarea name="amenities-description-loc-##LOCATIONNUMBER##" id="amenities-description-loc-##LOCATIONNUMBER##" cols="30" rows="10" class="form-control"></textarea>
   </div>
 </div>
 
@@ -252,15 +252,15 @@
         $('#location-qty').append('<option value="' + i + '">' + i + '</option>')
       }
 
-
       $('#location-qty').on('change', function () {
         var locationCount = $(this).val();
         var $stockTemplate = $('#property-profile-template').html();
         var $locationsContainer = $('#property-location-container');
 
         $locationsContainer.empty();
+
         for (var i = 0; i < locationCount; i++) {
-          var template = $stockTemplate.formatTemplate(i + 1);
+          var template = $stockTemplate.replace('##LOCATIONNUMBER##', i + 1);
           $locationsContainer.append(template);
         }
 
@@ -304,15 +304,6 @@
       });
 
     });
-
-    String.prototype.formatTemplate = function () {
-      var formattedTemplate = this;
-      for (var i = 0; i < arguments.length; i++) {
-        var replacer = new RegExp('\\{' + i + '\\}', 'gi'); // {# (arg index#)}
-        formattedTemplate = formattedTemplate.replace(replacer, arguments[i]);
-      }
-      return formattedTemplate;
-    }
 
     var addYearSelectOptions = function (selector) {
       $(selector).empty();
